@@ -7,8 +7,8 @@ public class Enemy extends GameCharacter implements IWeapon {
 
     private String name;
 
-    public Enemy(int healthPoints, String name) {
-        super(healthPoints);
+    public Enemy(int healthPoints, String name, int treasurePot) {
+        super(healthPoints, treasurePot);
         this.name = name;
     }
 

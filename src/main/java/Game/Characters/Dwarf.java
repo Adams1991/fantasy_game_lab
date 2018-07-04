@@ -5,8 +5,8 @@ import Game.Fighter;
 
 public class Dwarf extends Fighter implements IWeapon {
 
-    public Dwarf(int healthPoints) {
-        super(healthPoints);
+    public Dwarf(int healthPoints, int treasurePot) {
+        super(healthPoints, treasurePot);
     }
 
     @Override

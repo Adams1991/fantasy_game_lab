@@ -12,8 +12,8 @@ public class ClericTest {
 
     @Before
     public void before(){
-        cleric = new Cleric(100);
-        enemy = new Enemy(100, "Ogre");
+        cleric = new Cleric(100, 100);
+        enemy = new Enemy(100, "Ogre", 100);
     }
 
     @Test

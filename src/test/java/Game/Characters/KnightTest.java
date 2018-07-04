@@ -12,8 +12,8 @@ public class KnightTest {
 
     @Before
     public void before(){
-        knight = new Knight(100);
-        wizard = new Wizard(100);
+        knight = new Knight(100,100);
+        wizard = new Wizard(100, 100);
     }
 
     @Test

@@ -5,8 +5,8 @@ import Game.Behaviours.ISpell;
 import Game.Spellcaster;
 
 public class Wizard extends Spellcaster implements ISpell, ICreature {
-    public Wizard(int healthPoints) {
-        super(healthPoints);
+    public Wizard(int healthPoints, int treasurePot) {
+        super(healthPoints, treasurePot);
     }
 
     @Override

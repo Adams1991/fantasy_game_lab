@@ -13,9 +13,9 @@ public class DwarfTest {
 
     @Before
     public void before(){
-        dwarf = new Dwarf(50);
-        enemy = new Enemy(50, "Troll");
-        cleric = new Cleric(50);
+        dwarf = new Dwarf(50, 100);
+        enemy = new Enemy(50, "Troll", 100);
+        cleric = new Cleric(50, 100);
     }
 
     @Test

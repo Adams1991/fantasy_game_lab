@@ -15,7 +15,7 @@ public class JungleRoomTest {
 
     @Before
     public void before()  {
-        enemy = new Enemy(100, "Lion");
+        enemy = new Enemy(100, "Lion", 100);
         treasure = new Treasure("Gems", 100);
         jungleRoom = new JungleRoom(treasure, enemy);
     }

@@ -13,8 +13,8 @@ public class BarbarianTest {
 
     @Before
     public void before(){
-        barbarian = new Barbarian(100);
-        enemy = new Enemy(100, "Troll");
+        barbarian = new Barbarian(100, 100);
+        enemy = new Enemy(100, "Troll", 100);
     }
 
     @Test

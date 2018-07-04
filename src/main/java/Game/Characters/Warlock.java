@@ -5,8 +5,8 @@ import Game.Behaviours.ISpell;
 import Game.Spellcaster;
 
 public class Warlock extends Spellcaster implements ISpell, ICreature {
-    public Warlock(int healthPoints) {
-        super(healthPoints);
+    public Warlock(int healthPoints, int treasurePot) {
+        super(healthPoints, treasurePot);
     }
 
     @Override

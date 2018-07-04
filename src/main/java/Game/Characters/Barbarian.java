@@ -4,8 +4,8 @@ import Game.Behaviours.IWeapon;
 import Game.Fighter;
 
 public class Barbarian extends Fighter implements IWeapon {
-    public Barbarian(int healthPoints) {
-        super(healthPoints);
+    public Barbarian(int healthPoints, int treasurePot) {
+        super(healthPoints, treasurePot);
     }
 
     @Override
