@@ -26,11 +26,6 @@ public class WarlockTest {
     }
 
 
-    @Test
-    public void spellReturnsHitPoints(){
-        assertEquals(20, warlock.fireball());
-        assertEquals(30, warlock.lightningStrike());
-    }
 
     @Test
     public void creatureReturnsHitPoints(){

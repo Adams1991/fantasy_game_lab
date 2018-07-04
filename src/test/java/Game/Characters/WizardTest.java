@@ -26,11 +26,7 @@ public class WizardTest {
     }
 
 
-    @Test
-    public void spellReturnsHitPoints(){
-        assertEquals(30, wizard.fireball());
-        assertEquals(20, wizard.lightningStrike());
-    }
+
 
     @Test
     public void creatureReturnsHitPoints(){

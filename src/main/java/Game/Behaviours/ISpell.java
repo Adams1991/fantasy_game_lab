@@ -1,9 +1,9 @@
 package Game.Behaviours;
 
+import Game.Characters.AttackType;
+
 public interface ISpell {
 
-    int fireball();
-
-    int lightningStrike();
+    public void ifAttackTypeIsSpellAddHealthPoints();
 
 }

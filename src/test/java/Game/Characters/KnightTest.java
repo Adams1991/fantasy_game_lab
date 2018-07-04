@@ -34,10 +34,6 @@ public class KnightTest {
         assertEquals(30, knight.Sword());
     }
 
-    @Test
-    public void canBeAttackedBySpell(){
-        knight.beAttacked(wizard.fireball());
-        assertEquals(70, knight.getHealthPoints());
-    }
+
 
 }

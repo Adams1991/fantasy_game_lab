@@ -6,7 +6,9 @@ public enum AttackType {
     AXE(20),
     CLUB(30),
     FIREBALL(30),
-    LIGHTING(30);
+    LIGHTING(30),
+    DRAGON(30),
+    OGRE(30);
 
     private final int value;
 

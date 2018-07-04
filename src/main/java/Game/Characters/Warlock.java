@@ -9,15 +9,7 @@ public class Warlock extends GameCharacter implements ISpell, ICreature {
         super(healthPoints, treasurePot, attackType);
     }
 
-    @Override
-    public int fireball() {
-        return 20;
-    }
 
-    @Override
-    public int lightningStrike() {
-        return 30;
-    }
 
     @Override
     public int ogre() {
@@ -27,5 +19,10 @@ public class Warlock extends GameCharacter implements ISpell, ICreature {
     @Override
     public int dragon() {
         return 30;
+    }
+
+    @Override
+    public void ifAttackTypeIsSpellAddHealthPoints() {
+
     }
 }
