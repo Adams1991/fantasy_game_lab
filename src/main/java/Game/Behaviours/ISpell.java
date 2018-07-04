@@ -4,6 +4,6 @@ import Game.Characters.AttackType;
 
 public interface ISpell {
 
-    public int ifAttackTypeIsSpellThenDouble();
+    public void ifAttackTypeIsSpellThenDouble();
 
 }

@@ -22,14 +22,9 @@ public class Wizard extends GameCharacter implements ISpell, ICreature{
     }
 
     @Override
-    public int ifAttackTypeIsSpellThenDouble() {
-        int attackType = 0;
+    public void ifAttackTypeIsSpellThenDouble() {
         if (super.getAttackType() == AttackType.FIREBALL || super.getAttackType() == AttackType.LIGHTING) {
-            attackType = super.getAttackType().getValue() * 2;
-        } else {
-            attackType= super.getAttackType().getValue();
-        }
-        return attackType;
+          super.getAttackType().setValue(getAttackType().getValue() *2);}
     }
 
 }

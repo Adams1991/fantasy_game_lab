@@ -10,7 +10,7 @@ public enum AttackType {
     DRAGON(30),
     OGRE(30);
 
-    private final int value;
+    private int value;
 
     AttackType(int value) {
         this.value = value;
@@ -18,6 +18,10 @@ public enum AttackType {
 
     public int getValue() {
         return value;
+    }
+
+    public void setValue(int newValue){
+        this.value = newValue;
     }
 
 
