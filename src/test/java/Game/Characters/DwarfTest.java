@@ -8,10 +8,12 @@ import static org.junit.Assert.assertEquals;
 public class DwarfTest {
 
     Dwarf dwarf;
+    Enemy enemy;
 
     @Before
     public void before(){
         dwarf = new Dwarf(50);
+        enemy = new Enemy(50, "Troll");
     }
 
     @Test
@@ -30,5 +32,12 @@ public class DwarfTest {
         assertEquals(30, dwarf.Axe());
         assertEquals(20, dwarf.Club());
         assertEquals(10, dwarf.Sword());
+    }
+
+    @Test
+    public void canBeAttacked(){
+        dwarf.beAttacked(enemy.Axe());
+        assertEquals(30,dwarf.getHealthPoints());
+
     }
 }

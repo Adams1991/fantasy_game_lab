@@ -8,10 +8,12 @@ import static org.junit.Assert.*;
 public class EnemyTest {
 
     Enemy enemy;
+    Dwarf dwarf;
 
     @Before
     public void before(){
         enemy = new Enemy(100, "Troll");
+        dwarf = new Dwarf(100);
     }
 
     @Test
@@ -42,5 +44,12 @@ public class EnemyTest {
         assertEquals(20, enemy.Axe());
         assertEquals(30, enemy.Club());
         assertEquals(10, enemy.Sword());
+    }
+
+    @Test
+    public void canBeAttacked(){
+        enemy.beAttacked(dwarf.Axe());
+        assertEquals(70,enemy.getHealthPoints());
+
     }
 }
