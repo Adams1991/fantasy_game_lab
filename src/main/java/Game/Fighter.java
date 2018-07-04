@@ -9,9 +9,5 @@ public abstract class Fighter extends GameCharacter {
         super(healthPoints);
     }
 
-//    public void beAttacked(int weaponUsed){
-//        super.setHealthPoints(super.getHealthPoints() -= weaponUsed);
-//    }
-
 
 }
