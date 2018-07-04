@@ -16,6 +16,13 @@ public class DwarfTest {
 
     @Test
     public void canGetHealthPoints(){
-        assertEquals(50, dwarf.gethealthPoints());
+        assertEquals(50, dwarf.getHealthPoints());
     }
+
+    @Test
+    public void canSetHealthPoints(){
+        dwarf.setHealthPoints(40);
+        assertEquals(40, dwarf.getHealthPoints());
+    }
+
 }

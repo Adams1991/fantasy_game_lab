@@ -9,7 +9,11 @@ public abstract class Character {
     }
 
 
-    public int gethealthPoints(){
+    public int getHealthPoints(){
         return this.healthPoints;
+    }
+
+    public void setHealthPoints(int i) {
+        this.healthPoints = i;
     }
 }

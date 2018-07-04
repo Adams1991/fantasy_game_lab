@@ -1,4 +1,9 @@
 package Game.Characters;
 
-public class Knight {
+import Game.Fighter;
+
+public class Knight extends Fighter {
+    public Knight(int healthPoints) {
+        super(healthPoints);
+    }
 }
