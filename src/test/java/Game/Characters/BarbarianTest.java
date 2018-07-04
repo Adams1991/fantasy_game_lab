@@ -25,4 +25,11 @@ public class BarbarianTest {
         barbarian.setHealthPoints(40);
         assertEquals(40, barbarian.getHealthPoints());
     }
+
+    @Test
+    public void weaponReturnsHitPoints(){
+        assertEquals(10, barbarian.Axe());
+        assertEquals(30, barbarian.Club());
+        assertEquals(20, barbarian.Sword());
+    }
 }

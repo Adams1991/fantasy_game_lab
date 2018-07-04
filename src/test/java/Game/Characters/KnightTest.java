@@ -24,4 +24,11 @@ public class KnightTest {
         knight.setHealthPoints(40);
         assertEquals(40, knight.getHealthPoints());
     }
+
+    @Test
+    public void weaponReturnsHitPoints(){
+        assertEquals(20, knight.Axe());
+        assertEquals(10, knight.Club());
+        assertEquals(30, knight.Sword());
+    }
 }

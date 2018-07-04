@@ -1,4 +1,9 @@
 package Game.Characters;
 
-public class Wizard {
+import Game.Spellcaster;
+
+public class Wizard extends Spellcaster {
+    public Wizard(int healthPoints) {
+        super(healthPoints);
+    }
 }

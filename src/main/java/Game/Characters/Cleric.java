@@ -1,4 +1,10 @@
 package Game.Characters;
 
-public class Cleric {
+import Game.GameCharacter;
+
+public class Cleric extends GameCharacter {
+
+    public Cleric(int healthPoints) {
+        super(healthPoints);
+    }
 }

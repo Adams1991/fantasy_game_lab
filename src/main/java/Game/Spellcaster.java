@@ -1,4 +1,7 @@
 package Game;
 
-public class Spellcaster {
+public abstract class Spellcaster extends GameCharacter {
+    public Spellcaster(int healthPoints) {
+        super(healthPoints);
+    }
 }

@@ -1,4 +1,9 @@
 package Game.Characters;
 
-public class Enemy {
+import Game.GameCharacter;
+
+public class Enemy extends GameCharacter {
+    public Enemy(int healthPoints) {
+        super(healthPoints);
+    }
 }

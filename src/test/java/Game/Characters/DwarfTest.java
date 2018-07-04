@@ -25,4 +25,10 @@ public class DwarfTest {
         assertEquals(40, dwarf.getHealthPoints());
     }
 
+    @Test
+    public void weaponReturnsHitPoints(){
+        assertEquals(30, dwarf.Axe());
+        assertEquals(20, dwarf.Club());
+        assertEquals(10, dwarf.Sword());
+    }
 }
