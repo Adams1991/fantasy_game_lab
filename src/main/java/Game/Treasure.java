@@ -22,4 +22,5 @@ public class Treasure {
     public void emptyTreasure() {
         this.value = 0;
     }
+
 }

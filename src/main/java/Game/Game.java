@@ -34,8 +34,11 @@ public class Game {
         return this.rooms.size();
     }
 
+    public ArrayList<Room> getRooms() {
+        return rooms;
+    }
 
-    public Room getFirstRoom() {
+    public Room getRoom() {
         return this.rooms.get(0);
     }
 
@@ -45,19 +48,28 @@ public class Game {
 
 
     public void canHurtEnemy() {
-        getFirstRoom().getEnemy().beAttacked(getCharacter().getAttackType().getValue());
+        getRoom().getEnemy().beAttacked(getCharacter().getAttackType().getValue());
     }
 
 
     public void canBeHurt() {
-        getCharacter().beAttacked(getFirstRoom().getEnemy().getAttackType().getValue());
+        getCharacter().beAttacked(getRoom().getEnemy().getAttackType().getValue());
     }
 
     public void collectTreasure() {
-        if (getFirstRoom().getEnemy().getHealthPoints() == 0){
-            getCharacter().collectTreasure(getFirstRoom().getTreasure().getValue());
-            getFirstRoom().getTreasure().emptyTreasure();
+        if (getRoom().getEnemy().getHealthPoints() == 0){
+            getCharacter().collectTreasure(getRoom().getTreasure().getValue());
+            getRoom().getTreasure().emptyTreasure();
         }else{
-        getCharacter().beAttacked(getFirstRoom().getEnemy().getAttackType().getValue());}
+        getCharacter().beAttacked(getRoom().getEnemy().getAttackType().getValue());}
     }
+
+
+    public void moveToNextRoom() {
+        if (getRoom().getEnemy().getHealthPoints() == 0 && getRoom().getTreasure().getValue() == 0){
+            getRooms().remove(0);
+        } else {
+            getCharacter().beAttacked(getRoom().getEnemy().getAttackType().getValue());}
+        }
+
 }
