@@ -1,4 +1,8 @@
 package Game;
 
-public class Fighter {
+public abstract class Fighter extends Character {
+
+    public Fighter(int healthPoints) {
+        super(healthPoints);
+    }
 }

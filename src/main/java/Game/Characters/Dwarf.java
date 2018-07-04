@@ -1,4 +1,10 @@
 package Game.Characters;
 
-public class Dwarf {
+import Game.Fighter;
+
+public class Dwarf extends Fighter {
+
+    public Dwarf(int healthPoints) {
+        super(healthPoints);
+    }
 }
