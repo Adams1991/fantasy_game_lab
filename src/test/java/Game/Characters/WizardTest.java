@@ -24,4 +24,11 @@ public class WizardTest {
         wizard.setHealthPoints(40);
         assertEquals(40, wizard.getHealthPoints());
     }
+
+
+    @Test
+    public void spellReturnsHitPoints(){
+        assertEquals(30, wizard.fireball());
+        assertEquals(20, wizard.lightningStrike());
+    }
 }

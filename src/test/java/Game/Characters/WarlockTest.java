@@ -24,4 +24,11 @@ public class WarlockTest {
         warlock.setHealthPoints(40);
         assertEquals(40, warlock.getHealthPoints());
     }
+
+
+    @Test
+    public void spellReturnsHitPoints(){
+        assertEquals(20, warlock.fireball());
+        assertEquals(30, warlock.lightningStrike());
+    }
 }
