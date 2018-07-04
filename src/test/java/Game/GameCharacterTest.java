@@ -1,5 +1,6 @@
 package Game;
 
+import Game.Characters.AttackType;
 import Game.Characters.Dwarf;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +13,7 @@ public class GameCharacterTest {
 
     @Before
     public void setUp() {
-       dwarf = new Dwarf(100, 199);
+       dwarf = new Dwarf(100, 199, AttackType.AXE);
     }
 
 

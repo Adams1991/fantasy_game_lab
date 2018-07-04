@@ -44,9 +44,9 @@ public class Game {
     }
 
 
-//    public void canHurtEnemy() {
-//        getFirstRoom().getEnemy().beAttacked(getCharacter());
-//    }
+    public void canHurtEnemy() {
+        getFirstRoom().getEnemy().beAttacked(getCharacter().getAttackType().getValue());
+    }
 
 
 

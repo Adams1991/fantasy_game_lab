@@ -19,9 +19,9 @@ public class DwarfTest {
 
     @Before
     public void before(){
-        dwarf = new Dwarf(50, 100);
-        enemy = new Enemy(50, "Troll", 100);
-        cleric = new Cleric(50, 100);
+        dwarf = new Dwarf(50, 100, AttackType.AXE);
+        enemy = new Enemy(50, "Troll", 100, AttackType.AXE);
+        cleric = new Cleric(50, 100, AttackType.AXE);
         treasure = new Treasure("Gem", 100);
         room = new JungleRoom(treasure, enemy);
     }

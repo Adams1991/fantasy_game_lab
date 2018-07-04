@@ -1,15 +1,18 @@
 package Game;
 
 import Game.Behaviours.IWeapon;
+import Game.Characters.AttackType;
 
 public abstract class GameCharacter {
 
         private int healthPoints;
         private int treasurePot;
+        private AttackType attackType;
 
-        public GameCharacter(int healthPoints, int treasurePot){
+        public GameCharacter(int healthPoints, int treasurePot, AttackType attackType){
             this.healthPoints = healthPoints;
             this.treasurePot = treasurePot;
+            this.attackType = attackType;
         }
 
 
@@ -36,6 +39,10 @@ public abstract class GameCharacter {
 
         public int getTreasurePot() {
             return this.treasurePot;
+        }
+
+        public AttackType getAttackType(){
+            return  this.attackType;
         }
 
 

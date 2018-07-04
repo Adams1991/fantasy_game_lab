@@ -5,8 +5,8 @@ import Game.GameCharacter;
 
 public class Cleric extends GameCharacter implements IHeal {
 
-    public Cleric(int healthPoints, int treasurePot) {
-        super(healthPoints, treasurePot);
+    public Cleric(int healthPoints, int treasurePot, AttackType attackType) {
+        super(healthPoints, treasurePot, attackType);
     }
 
     @Override

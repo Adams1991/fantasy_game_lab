@@ -12,8 +12,8 @@ public class EnemyTest {
 
     @Before
     public void before(){
-        enemy = new Enemy(100, "Troll", 100);
-        dwarf = new Dwarf(100, 100);
+        enemy = new Enemy(100, "Troll", 100, AttackType.AXE);
+        dwarf = new Dwarf(100, 100, AttackType.AXE);
     }
 
     @Test

@@ -11,7 +11,7 @@ public class WizardTest {
 
     @Before
     public void before(){
-        wizard = new Wizard(100, 100);
+        wizard = new Wizard(100, 100, AttackType.AXE);
     }
 
     @Test

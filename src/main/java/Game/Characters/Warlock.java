@@ -2,11 +2,11 @@ package Game.Characters;
 
 import Game.Behaviours.ICreature;
 import Game.Behaviours.ISpell;
-import Game.Spellcaster;
+import Game.GameCharacter;
 
-public class Warlock extends Spellcaster implements ISpell, ICreature {
-    public Warlock(int healthPoints, int treasurePot) {
-        super(healthPoints, treasurePot);
+public class Warlock extends GameCharacter implements ISpell, ICreature {
+    public Warlock(int healthPoints, int treasurePot, AttackType attackType) {
+        super(healthPoints, treasurePot, attackType);
     }
 
     @Override

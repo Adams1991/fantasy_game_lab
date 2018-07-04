@@ -1,12 +1,12 @@
 package Game.Characters;
 
 import Game.Behaviours.IWeapon;
-import Game.Fighter;
+import Game.GameCharacter;
 
-public class Dwarf extends Fighter implements IWeapon {
+public class Dwarf extends GameCharacter implements IWeapon {
 
-    public Dwarf(int healthPoints, int treasurePot) {
-        super(healthPoints, treasurePot);
+    public Dwarf(int healthPoints, int treasurePot, AttackType attackType) {
+        super(healthPoints, treasurePot, attackType);
     }
 
     @Override

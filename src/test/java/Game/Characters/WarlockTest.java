@@ -11,7 +11,7 @@ public class WarlockTest {
 
     @Before
     public void before(){
-        warlock = new Warlock(100, 100);
+        warlock = new Warlock(100, 100, AttackType.AXE);
     }
 
     @Test

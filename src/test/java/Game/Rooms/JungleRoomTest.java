@@ -1,5 +1,6 @@
 package Game.Rooms;
 
+import Game.Characters.AttackType;
 import Game.Characters.Enemy;
 import Game.Treasure;
 import org.junit.Before;
@@ -15,7 +16,7 @@ public class JungleRoomTest {
 
     @Before
     public void before()  {
-        enemy = new Enemy(100, "Lion", 100);
+        enemy = new Enemy(100, "Lion", 100, AttackType.CLUB);
         treasure = new Treasure("Gems", 100);
         jungleRoom = new JungleRoom(treasure, enemy);
     }

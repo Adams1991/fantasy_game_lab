@@ -1,11 +1,11 @@
 package Game.Characters;
 
 import Game.Behaviours.IWeapon;
-import Game.Fighter;
+import Game.GameCharacter;
 
-public class Knight extends Fighter implements IWeapon {
-    public Knight(int healthPoints, int treasurePot) {
-        super(healthPoints, treasurePot);
+public class Knight extends GameCharacter implements IWeapon {
+    public Knight(int healthPoints, int treasurePot, AttackType attackType) {
+        super(healthPoints, treasurePot, attackType);
     }
 
     @Override

@@ -1,5 +1,6 @@
 package Game;
 
+import Game.Characters.AttackType;
 import Game.Characters.Cleric;
 import Game.Characters.Dwarf;
 import Game.Characters.Enemy;
@@ -23,8 +24,8 @@ public class GameTest {
 
     @Before
     public void before() {
-        dwarf = new Dwarf(50, 100);
-        enemy = new Enemy(50, "Troll", 100);
+        dwarf = new Dwarf(50, 100, AttackType.AXE);
+        enemy = new Enemy(50, "Troll", 100, AttackType.AXE);
         treasure = new Treasure("Gem", 100);
         room = new JungleRoom(treasure, enemy);
         rooms = new ArrayList<>();
@@ -59,11 +60,11 @@ public class GameTest {
 
 
 
-//    @Test
-//    public void canPlay(){
-//        game.addRoom(room);
-//        game.addCharacter(dwarf);
-//        game.canHurtEnemy();
-//        assertEquals(40, enemy.getHealthPoints());
-//    }
+    @Test
+    public void canPlay(){
+        game.addRoom(room);
+        game.addCharacter(dwarf);
+        game.canHurtEnemy();
+        assertEquals(30, enemy.getHealthPoints());
+    }
 }
