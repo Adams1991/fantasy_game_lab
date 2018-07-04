@@ -23,4 +23,13 @@ public class Dwarf extends Fighter implements IWeapon {
     public int Club() {
         return 20;
     }
+
+
+    public void lapidary(String type) {
+        int doublePot = 0;
+        if (type == "Gem" || type == "Gold"){
+            doublePot = super.getTreasurePot() * 2;
+        }
+        super.collectTreasure(doublePot);
+    }
 }

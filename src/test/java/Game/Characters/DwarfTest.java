@@ -62,4 +62,11 @@ public class DwarfTest {
         dwarf.collectTreasure(room.getTreasure().getValue());
         assertEquals(200, dwarf.getTreasurePot());
     }
+
+    @Test
+    public void dwarfCanUseLapidary(){
+        dwarf.lapidary(room.getTreasure().getType());
+        assertEquals(300, dwarf.getTreasurePot());
+
+    }
 }
