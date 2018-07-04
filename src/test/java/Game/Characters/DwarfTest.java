@@ -1,5 +1,8 @@
 package Game.Characters;
 
+import Game.Room;
+import Game.Rooms.JungleRoom;
+import Game.Treasure;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,12 +13,17 @@ public class DwarfTest {
     Dwarf dwarf;
     Enemy enemy;
     Cleric cleric;
+    JungleRoom room;
+    Treasure treasure;
+
 
     @Before
     public void before(){
         dwarf = new Dwarf(50, 100);
         enemy = new Enemy(50, "Troll", 100);
         cleric = new Cleric(50, 100);
+        treasure = new Treasure("Gem", 100);
+        room = new JungleRoom(treasure, enemy);
     }
 
     @Test
@@ -47,5 +55,11 @@ public class DwarfTest {
     public void canBeHealed(){
         dwarf.beHealed(cleric.potion());
         assertEquals(80, dwarf.getHealthPoints());
+    }
+
+    @Test
+    public void canCollectFromRoom(){
+        dwarf.collectTreasure(room.getTreasure().getValue());
+        assertEquals(200, dwarf.getTreasurePot());
     }
 }

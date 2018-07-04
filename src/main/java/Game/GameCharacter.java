@@ -28,10 +28,13 @@ public abstract class GameCharacter {
         this.healthPoints += toolUsed;
         }
 
-        public void collectTreasure(){
-
+        public void collectTreasure(int treasureInRoom){
+            this.treasurePot += treasureInRoom;
         }
 
+        public int getTreasurePot() {
+            return this.treasurePot;
+        }
 }
 
 
