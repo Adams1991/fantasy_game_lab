@@ -22,4 +22,8 @@ public class Knight extends Fighter implements IWeapon {
     public int Club() {
         return 10;
     }
+
+//    public void armour(){
+//        getHealthPoints() += 10;
+//    }
 }

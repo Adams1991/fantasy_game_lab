@@ -22,7 +22,7 @@ public abstract class GameCharacter {
        this.healthPoints -= weaponUsed;
         }
 
-    public void beHealed(int toolUsed){
+        public void beHealed(int toolUsed){
         this.healthPoints += toolUsed;
         }
 

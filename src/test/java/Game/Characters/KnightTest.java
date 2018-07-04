@@ -39,4 +39,5 @@ public class KnightTest {
         knight.beAttacked(wizard.fireball());
         assertEquals(70, knight.getHealthPoints());
     }
+
 }
