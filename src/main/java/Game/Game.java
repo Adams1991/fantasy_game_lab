@@ -45,6 +45,9 @@ public class Game {
 
 
 //    public void canHurtEnemy() {
-//        getFirstRoom().getEnemy().beAttacked(getCharacter().Axe());
+//        getFirstRoom().getEnemy().beAttacked(getCharacter());
 //    }
+
+
+
 }

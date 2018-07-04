@@ -57,6 +57,8 @@ public class GameTest {
         assertEquals(dwarf, game.getCharacter());
     }
 
+
+
 //    @Test
 //    public void canPlay(){
 //        game.addRoom(room);

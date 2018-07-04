@@ -37,6 +37,8 @@ public abstract class GameCharacter {
         public int getTreasurePot() {
             return this.treasurePot;
         }
+
+
 }
 
 
