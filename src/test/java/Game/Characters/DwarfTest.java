@@ -9,11 +9,13 @@ public class DwarfTest {
 
     Dwarf dwarf;
     Enemy enemy;
+    Cleric cleric;
 
     @Before
     public void before(){
         dwarf = new Dwarf(50);
         enemy = new Enemy(50, "Troll");
+        cleric = new Cleric(50);
     }
 
     @Test
@@ -39,5 +41,11 @@ public class DwarfTest {
         dwarf.beAttacked(enemy.Axe());
         assertEquals(30,dwarf.getHealthPoints());
 
+    }
+
+    @Test
+    public void canBeHealed(){
+        dwarf.beHealed(cleric.potion());
+        assertEquals(80, dwarf.getHealthPoints());
     }
 }

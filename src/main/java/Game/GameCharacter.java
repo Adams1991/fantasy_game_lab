@@ -20,8 +20,11 @@ public abstract class GameCharacter {
 
         public void beAttacked(int weaponUsed){
        this.healthPoints -= weaponUsed;
-    }
+        }
 
+    public void beHealed(int toolUsed){
+        this.healthPoints += toolUsed;
+        }
 
 }
 

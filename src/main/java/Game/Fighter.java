@@ -10,4 +10,6 @@ public abstract class Fighter extends GameCharacter {
     }
 
 
+
+
 }
