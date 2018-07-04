@@ -568,11 +568,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WizardTest.creatureReturnsHitPoints">
+  <component name="RunManager" selected="JUnit.ClericTest.healReturnsHealthPoints">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="KnightTest.weaponReturnsHitPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ClericTest.healReturnsHealthPoints" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fantasyGameLab_test" />
       <extension name="coverage">
         <pattern>
@@ -583,8 +583,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="Game.Characters" />
-      <option name="MAIN_CLASS_NAME" value="Game.Characters.KnightTest" />
-      <option name="METHOD_NAME" value="weaponReturnsHitPoints" />
+      <option name="MAIN_CLASS_NAME" value="Game.Characters.ClericTest" />
+      <option name="METHOD_NAME" value="healReturnsHealthPoints" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -726,19 +726,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.KnightTest.weaponReturnsHitPoints" />
       <item itemvalue="JUnit.WarlockTest.spellReturnsHitPoints" />
       <item itemvalue="JUnit.WizardTest.spellReturnsHitPoints" />
       <item itemvalue="JUnit.WarlockTest.creatureReturnsHitPoints" />
       <item itemvalue="JUnit.WizardTest.creatureReturnsHitPoints" />
+      <item itemvalue="JUnit.ClericTest.healReturnsHealthPoints" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ClericTest.healReturnsHealthPoints" />
         <item itemvalue="JUnit.WizardTest.creatureReturnsHitPoints" />
         <item itemvalue="JUnit.WarlockTest.creatureReturnsHitPoints" />
         <item itemvalue="JUnit.WizardTest.spellReturnsHitPoints" />
         <item itemvalue="JUnit.WarlockTest.spellReturnsHitPoints" />
-        <item itemvalue="JUnit.KnightTest.weaponReturnsHitPoints" />
       </list>
     </recent_temporary>
   </component>

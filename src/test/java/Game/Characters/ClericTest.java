@@ -24,4 +24,10 @@ public class ClericTest {
         cleric.setHealthPoints(40);
         assertEquals(40, cleric.getHealthPoints());
     }
+
+    @Test
+    public void healReturnsHealthPoints(){
+        assertEquals(30, cleric.potion());
+        assertEquals(20, cleric.herbs());
+    }
 }
