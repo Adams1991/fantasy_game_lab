@@ -4,6 +4,6 @@ import Game.Characters.AttackType;
 
 public interface ISpell {
 
-    public void ifAttackTypeIsSpellAddHealthPoints();
+    public int ifAttackTypeIsSpellThenDouble();
 
 }

@@ -22,7 +22,13 @@ public class Warlock extends GameCharacter implements ISpell, ICreature {
     }
 
     @Override
-    public void ifAttackTypeIsSpellAddHealthPoints() {
-
+    public int ifAttackTypeIsSpellThenDouble() {
+        int attackType = 0;
+        if (super.getAttackType() == AttackType.FIREBALL || super.getAttackType() == AttackType.LIGHTING) {
+           attackType = super.getAttackType().getValue() * 2;
+        } else {
+            attackType= super.getAttackType().getValue();
+        }
+        return attackType;
     }
 }
