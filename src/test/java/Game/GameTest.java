@@ -25,7 +25,7 @@ public class GameTest {
     @Before
     public void before() {
         dwarf = new Dwarf(50, 100, AttackType.AXE);
-        enemy = new Enemy(50, "Troll", 100, AttackType.AXE);
+        enemy = new Enemy(50, "Troll", 100, AttackType.CLUB);
         treasure = new Treasure("Gem", 100);
         room = new JungleRoom(treasure, enemy);
         rooms = new ArrayList<>();
@@ -61,10 +61,22 @@ public class GameTest {
 
 
     @Test
-    public void canPlay(){
+    public void canCauseDamageBothWays(){
         game.addRoom(room);
         game.addCharacter(dwarf);
         game.canHurtEnemy();
+        game.canBeHurt();
         assertEquals(30, enemy.getHealthPoints());
+        assertEquals(20, dwarf.getHealthPoints());
+    }
+
+    @Test
+    public void canOnlyCollectTreasureWhenEnemyDead(){
+        game.addRoom(room);
+        game.addCharacter(dwarf);
+        game.getFirstRoom().getEnemy().setHealthPoints(0);
+        game.collectTreasure();
+        assertEquals(0, game.getFirstRoom().getTreasure().getValue());
+        assertEquals(200, game.getCharacter().getTreasurePot());
     }
 }

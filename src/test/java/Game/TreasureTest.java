@@ -23,4 +23,6 @@ public class TreasureTest {
     public void canGetValue() {
         assertEquals(100, treasure.getValue());
     }
+
+
 }

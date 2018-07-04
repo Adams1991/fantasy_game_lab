@@ -49,5 +49,14 @@ public class Game {
     }
 
 
+    public void canBeHurt() {
+        getCharacter().beAttacked(getFirstRoom().getEnemy().getAttackType().getValue());
+    }
 
+    public void collectTreasure() {
+        if (getFirstRoom().getEnemy().getHealthPoints() == 0){
+            getCharacter().collectTreasure(getFirstRoom().getTreasure().getValue());
+            getFirstRoom().getTreasure().emptyTreasure();
+        }
+    }
 }

@@ -18,4 +18,8 @@ public class Treasure {
     public int getValue() {
         return this.value;
     }
+
+    public void emptyTreasure() {
+        this.value = 0;
+    }
 }
