@@ -1,5 +1,7 @@
 package Game;
 
+import Game.Behaviours.IWeapon;
+
 public abstract class GameCharacter {
 
         private int healthPoints;

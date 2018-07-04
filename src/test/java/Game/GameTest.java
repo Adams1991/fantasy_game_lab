@@ -51,9 +51,17 @@ public class GameTest {
         assertEquals(room, game.getFirstRoom());
     }
 
+    @Test
+    public void canGetCharacter(){
+        game.addCharacter(dwarf);
+        assertEquals(dwarf, game.getCharacter());
+    }
 
 //    @Test
-//    public void canCompleteRoom(){
-//        assertEquals();
+//    public void canPlay(){
+//        game.addRoom(room);
+//        game.addCharacter(dwarf);
+//        game.canHurtEnemy();
+//        assertEquals(40, enemy.getHealthPoints());
 //    }
 }

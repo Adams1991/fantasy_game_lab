@@ -1,6 +1,7 @@
 package Game;
 
 import Game.Characters.Dwarf;
+import Game.Characters.Enemy;
 import Game.Rooms.JungleRoom;
 
 import java.lang.reflect.Array;
@@ -37,4 +38,13 @@ public class Game {
     public Room getFirstRoom() {
         return this.rooms.get(0);
     }
+
+    public GameCharacter getCharacter() {
+        return this.characters.get(0);
+    }
+
+
+//    public void canHurtEnemy() {
+//        getFirstRoom().getEnemy().beAttacked(getCharacter().Axe());
+//    }
 }

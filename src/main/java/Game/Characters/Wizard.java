@@ -2,6 +2,7 @@ package Game.Characters;
 
 import Game.Behaviours.ICreature;
 import Game.Behaviours.ISpell;
+import Game.Behaviours.IWeapon;
 import Game.Spellcaster;
 
 public class Wizard extends Spellcaster implements ISpell, ICreature {
