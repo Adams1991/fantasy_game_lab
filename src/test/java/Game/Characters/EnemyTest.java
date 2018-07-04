@@ -34,7 +34,13 @@ public class EnemyTest {
     public void canSetName(){
         enemy.setName("Ogre");
         assertEquals("Ogre", enemy.getName());
+        }
 
+
+    @Test
+    public void weaponReturnsHitPoints(){
+        assertEquals(20, enemy.Axe());
+        assertEquals(30, enemy.Club());
+        assertEquals(10, enemy.Sword());
     }
-
 }
