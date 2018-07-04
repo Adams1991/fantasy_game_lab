@@ -16,6 +16,7 @@ public abstract class GameCharacter {
         public void setHealthPoints(int i) {
             this.healthPoints = i;
         }
-    }
+
+}
 
 

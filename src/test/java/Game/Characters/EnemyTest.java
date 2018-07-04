@@ -11,7 +11,7 @@ public class EnemyTest {
 
     @Before
     public void before(){
-        enemy = new Enemy(100);
+        enemy = new Enemy(100, "Troll");
     }
 
     @Test
@@ -24,4 +24,17 @@ public class EnemyTest {
         enemy.setHealthPoints(40);
         assertEquals(40, enemy.getHealthPoints());
     }
+
+    @Test
+    public void canGetName(){
+        assertEquals("Troll", enemy.getName());
+    }
+
+    @Test
+    public void canSetName(){
+        enemy.setName("Ogre");
+        assertEquals("Ogre", enemy.getName());
+
+    }
+
 }
