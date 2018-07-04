@@ -31,4 +31,10 @@ public class WizardTest {
         assertEquals(30, wizard.fireball());
         assertEquals(20, wizard.lightningStrike());
     }
+
+    @Test
+    public void creatureReturnsHitPoints(){
+        assertEquals(30, wizard.ogre());
+        assertEquals(20, wizard.dragon());
+    }
 }

@@ -31,4 +31,10 @@ public class WarlockTest {
         assertEquals(20, warlock.fireball());
         assertEquals(30, warlock.lightningStrike());
     }
+
+    @Test
+    public void creatureReturnsHitPoints(){
+        assertEquals(20, warlock.ogre());
+        assertEquals(30, warlock.dragon());
+    }
 }

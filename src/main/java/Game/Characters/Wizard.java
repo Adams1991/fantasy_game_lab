@@ -1,9 +1,10 @@
 package Game.Characters;
 
+import Game.Behaviours.ICreature;
 import Game.Behaviours.ISpell;
 import Game.Spellcaster;
 
-public class Wizard extends Spellcaster implements ISpell {
+public class Wizard extends Spellcaster implements ISpell, ICreature {
     public Wizard(int healthPoints) {
         super(healthPoints);
     }
@@ -15,6 +16,16 @@ public class Wizard extends Spellcaster implements ISpell {
 
     @Override
     public int lightningStrike() {
+        return 20;
+    }
+
+    @Override
+    public int ogre() {
+        return 30;
+    }
+
+    @Override
+    public int dragon() {
         return 20;
     }
 }
