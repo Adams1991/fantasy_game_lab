@@ -8,10 +8,12 @@ import static org.junit.Assert.*;
 public class KnightTest {
 
     Knight knight;
+    Wizard wizard;
 
     @Before
     public void before(){
         knight = new Knight(100);
+        wizard = new Wizard(100);
     }
 
     @Test
@@ -30,5 +32,11 @@ public class KnightTest {
         assertEquals(20, knight.Axe());
         assertEquals(10, knight.Club());
         assertEquals(30, knight.Sword());
+    }
+
+    @Test
+    public void canBeAttackedBySpell(){
+        knight.beAttacked(wizard.fireball());
+        assertEquals(70, knight.getHealthPoints());
     }
 }

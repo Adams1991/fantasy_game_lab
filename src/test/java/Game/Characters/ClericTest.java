@@ -8,10 +8,12 @@ import static org.junit.Assert.*;
 public class ClericTest {
 
     Cleric cleric;
+    Enemy enemy;
 
     @Before
     public void before(){
         cleric = new Cleric(100);
+        enemy = new Enemy(100, "Ogre");
     }
 
     @Test
@@ -29,5 +31,12 @@ public class ClericTest {
     public void healReturnsHealthPoints(){
         assertEquals(30, cleric.potion());
         assertEquals(20, cleric.herbs());
+    }
+
+    @Test
+    public void canBeAttacked(){
+        cleric.beAttacked(enemy.Sword());
+        assertEquals(90, cleric.getHealthPoints());
+
     }
 }

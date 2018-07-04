@@ -9,10 +9,12 @@ public class BarbarianTest {
 
 
     Barbarian barbarian;
+    Enemy enemy;
 
     @Before
     public void before(){
         barbarian = new Barbarian(100);
+        enemy = new Enemy(100, "Troll");
     }
 
     @Test
@@ -31,5 +33,12 @@ public class BarbarianTest {
         assertEquals(10, barbarian.Axe());
         assertEquals(30, barbarian.Club());
         assertEquals(20, barbarian.Sword());
+    }
+
+    @Test
+    public void canBeAttacked(){
+        barbarian.beAttacked(enemy.Axe());
+        assertEquals(80,barbarian.getHealthPoints());
+
     }
 }
