@@ -57,6 +57,7 @@ public class Game {
         if (getFirstRoom().getEnemy().getHealthPoints() == 0){
             getCharacter().collectTreasure(getFirstRoom().getTreasure().getValue());
             getFirstRoom().getTreasure().emptyTreasure();
-        }
+        }else{
+        getCharacter().beAttacked(getFirstRoom().getEnemy().getAttackType().getValue());}
     }
 }

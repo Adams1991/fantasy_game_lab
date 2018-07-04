@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="311ee938-70ce-4749-8886-a549a7662c99" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/Game/Game.java" afterPath="$PROJECT_DIR$/src/main/java/Game/Game.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game/Treasure.java" afterPath="$PROJECT_DIR$/src/main/java/Game/Treasure.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Game/GameTest.java" afterPath="$PROJECT_DIR$/src/test/java/Game/GameTest.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Game/TreasureTest.java" afterPath="$PROJECT_DIR$/src/test/java/Game/TreasureTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,27 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="58" column="55" lean-forward="false" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#797#798#0" expanded="true" />
-                <element signature="e#837#838#0" expanded="true" />
-                <element signature="e#880#881#0" expanded="true" />
-                <element signature="e#925#926#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#1055#1056#0" expanded="true" />
-                <element signature="e#1087#1088#0" expanded="true" />
-                <element signature="e#1182#1183#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Treasure.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Treasure.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Game/Treasure.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
@@ -57,12 +35,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="GameTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/Game/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state relative-caret-position="436">
+              <caret line="90" column="22" lean-forward="false" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="436">
+              <caret line="60" column="89" lean-forward="false" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="89" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#797#798#0" expanded="true" />
+                <element signature="e#837#838#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
+                <element signature="e#925#926#0" expanded="true" />
+                <element signature="e#960#961#0" expanded="true" />
+                <element signature="e#1055#1056#0" expanded="true" />
+                <element signature="e#1087#1088#0" expanded="true" />
+                <element signature="e#1182#1183#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -350,9 +348,9 @@
         <option value="$PROJECT_DIR$/src/main/java/Game/GameCharacter.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game/Room.java" />
         <option value="$PROJECT_DIR$/src/test/java/Game/TreasureTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Game/GameTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Game/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/Game/Treasure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Game/Game.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Game/GameTest.java" />
       </list>
     </option>
   </component>
@@ -696,24 +694,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 25m 47s.xml">
-      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 26m 00s.xml">
-      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 29m 17s.xml">
-      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 29m 38s.xml">
-      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 30m 06s.xml">
-      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 30m 16s.xml">
-      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 33m 44s.xml">
       <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
     </history-entry>
@@ -724,6 +704,24 @@
       <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 37m 27s.xml">
+      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 39m 16s.xml">
+      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 40m 19s.xml">
+      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 40m 45s.xml">
+      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 41m 59s.xml">
+      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 43m 14s.xml">
+      <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_fantasyGameLab_test - 2018.07.04 at 16h 43m 57s.xml">
       <configuration name="All in fantasyGameLab_test" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1218,18 +1216,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Game/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Treasure.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#383#384#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
-          <caret line="58" column="55" lean-forward="false" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
+          <caret line="60" column="89" lean-forward="false" selection-start-line="60" selection-start-column="89" selection-end-line="60" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#797#798#0" expanded="true" />
@@ -1244,14 +1245,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Game/Treasure.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Game/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#383#384#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="436">
+          <caret line="90" column="22" lean-forward="false" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>

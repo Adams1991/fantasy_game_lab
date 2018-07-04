@@ -71,12 +71,25 @@ public class GameTest {
     }
 
     @Test
-    public void canOnlyCollectTreasureWhenEnemyDead(){
+    public void canOnlyCollectTreasureWhenEnemyDeadOrWillGetAttacked___dead(){
         game.addRoom(room);
         game.addCharacter(dwarf);
         game.getFirstRoom().getEnemy().setHealthPoints(0);
         game.collectTreasure();
         assertEquals(0, game.getFirstRoom().getTreasure().getValue());
         assertEquals(200, game.getCharacter().getTreasurePot());
+        assertEquals(50, dwarf.getHealthPoints());
     }
+
+    @Test
+    public void canOnlyCollectTreasureWhenEnemyDeadOrWillGetAttacked___alive(){
+        game.addRoom(room);
+        game.addCharacter(dwarf);
+        game.collectTreasure();
+        assertEquals(100, game.getFirstRoom().getTreasure().getValue());
+        assertEquals(100, game.getCharacter().getTreasurePot());
+        assertEquals(20, dwarf.getHealthPoints());
+    }
+
+
 }
